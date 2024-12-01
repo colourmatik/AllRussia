@@ -16,36 +16,39 @@
 			</h3>
 			<p class="text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique
-				et egestas quis ipsum suspendisse. Consequat id porta nibh venenatis. Cursus euismod quis
-				viverra nibh cras pulvinar mattis nunc.
+				labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper. Felis bibendum ut
+				tristique et egestas quis ipsum suspendisse. Consequat id porta nibh venenatis. Cursus
+				euismod quis viverra nibh cras pulvinar mattis nunc.
 			</p>
-			<h2 class="article-title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-		<p class="text">
-			Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique et egestas quis ipsum
-			suspendisse. Consequat id porta nibh venenatis. Cursus euismod quis viverra nibh cras pulvinar
-			mattis nunc. Id aliquet lectus proin nibh. Donec massa sapien faucibus et molestie.
-		</p>
-		<p class="text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique
-			et egestas quis ipsum suspendisse. Consequat id porta nibh venenatis. Cursus euismod quis
-			viverra nibh cras pulvinar mattis nunc.
-		</p>
+			<h2 class="article-title">
+				Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+			</h2>
+			<p class="text">
+				Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique et egestas quis ipsum
+				suspendisse. Consequat id porta nibh venenatis. Cursus euismod quis viverra nibh cras
+				pulvinar mattis nunc. Id aliquet lectus proin nibh. Donec massa sapien faucibus et molestie.
+			</p>
+			<p class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper. Felis bibendum ut
+				tristique et egestas quis ipsum suspendisse. Consequat id porta nibh venenatis. Cursus
+				euismod quis viverra nibh cras pulvinar mattis nunc.
+			</p>
 			<img src="../../assets/second.png" alt="Фотография статьи" class="article-image" />
-		<p class="text">
-			Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
-			Imperdiet dui accumsan sit amet nulla facilisi morbi.
-		</p>
-		<p class="text">
-			Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique et egestas quis ipsum
-			suspendisse.
-		</p>
-		<p class="text">
-			Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a lacus
-			vestibulum sed. Proin fermentum leo vel orci. In mollis nunc sed id semper risus in hendrerit.
-		</p>
-		<p class="text">Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra.</p>
+			<p class="text">
+				Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+				Imperdiet dui accumsan sit amet nulla facilisi morbi.
+			</p>
+			<p class="text">
+				Volutpat ac tincidunt vitae semper. Felis bibendum ut tristique et egestas quis ipsum
+				suspendisse.
+			</p>
+			<p class="text">
+				Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a lacus
+				vestibulum sed. Proin fermentum leo vel orci. In mollis nunc sed id semper risus in
+				hendrerit.
+			</p>
+			<p class="text">Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra.</p>
 		</div>
 		<!-- Правая колонка -->
 		<aside class="sidebar">
@@ -60,23 +63,32 @@
 				</p>
 			</div>
 			<div class="related-materials">
-    <span class="red-line"></span>
-    <h3 class="related-title">Материалы по теме</h3>
-    <ul class="related-list">
-        <li class="related-item">
-            <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a lacus vestibulum sed.</p>
-            <span class="related-topic">Тема</span>
-        </li>
-        <li class="related-item">
-            <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a lacus vestibulum sed.</p>
-            <span class="related-topic">Тема</span>
-        </li>
-        <li class="related-item">
-            <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a lacus vestibulum sed.</p>
-            <span class="related-topic">Тема</span>
-        </li>
-    </ul>
-</div>
+				<span class="red-line"></span>
+				<h3 class="related-title">Материалы по теме</h3>
+				<ul class="related-list">
+					<li class="related-item">
+						<p>
+							Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a
+							lacus vestibulum sed.
+						</p>
+						<span class="related-topic">Тема</span>
+					</li>
+					<li class="related-item">
+						<p>
+							Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a
+							lacus vestibulum sed.
+						</p>
+						<span class="related-topic">Тема</span>
+					</li>
+					<li class="related-item">
+						<p>
+							Imperdiet dui accumsan sit amet nulla facilisi morbi. Tempor commodo ullamcorper a
+							lacus vestibulum sed.
+						</p>
+						<span class="related-topic">Тема</span>
+					</li>
+				</ul>
+			</div>
 		</aside>
 	</div>
 </template>
@@ -166,44 +178,44 @@ export default {
 	margin-bottom: 8px;
 }
 .related-materials {
-    font-family: Arial, sans-serif;
-    margin: 0px;
+	font-family: Arial, sans-serif;
+	margin: 0px;
 }
 
 .red-line {
-    display: block;
-    width: 50px;
-    height: 4px;
-    background-color: red;
-    margin-bottom: 10px;
+	display: block;
+	width: 50px;
+	height: 4px;
+	background-color: red;
+	margin-bottom: 10px;
 }
 
 .related-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .related-list {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 .related-item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
 }
 
 .related-item p {
-    margin: 0 0 5px;
-    font-size: 16px;
-    color: #333;
+	margin: 0 0 5px;
+	font-size: 16px;
+	color: #333;
 }
 
 .related-topic {
-    font-size: 14px;
-    color: gray;
-    font-style: italic;
+	font-size: 14px;
+	color: gray;
+	font-style: italic;
 }
 
 .red-line {

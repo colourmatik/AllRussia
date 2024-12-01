@@ -60,86 +60,93 @@
 			<div class="items item_1">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_2">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_3">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_4">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_5">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_6">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 			<div class="items item_7">
 				<img src="@/assets/mainmama.png" alt="Фотография статьи" />
 				<div class="item-content">
-				<h2 class="main_title">Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</h2>
-				<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
-				<h2 class="container_title">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna.
-				</h2>
+					<h2 class="main_title">
+						Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+					</h2>
+					<p class="main_subtitle">Александр Смит | 43 минуты назад</p>
+					<h2 class="container_title">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.
+					</h2>
 				</div>
-				
 			</div>
 		</div>
 	</div>
@@ -259,6 +266,4 @@ h3 {
 	margin: 0;
 	line-height: 1.5;
 }
-
-
 </style>

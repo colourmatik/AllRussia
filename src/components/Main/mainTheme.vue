@@ -1,17 +1,12 @@
-<script>
-export default {
-	name: 'mainTheme',
-	data() {
-		return {
-			titles: [
-				{ id: 1, title: '123', subtitle: '123' },
-				{ id: 2, title: '123', subtitle: '123' },
-				{ id: 3, title: '123', subtitle: '123' },
-				{ id: 4, title: '123', subtitle: '123' }
-			]
-		}
-	}
-}
+<script setup>
+import { ref } from 'vue'
+
+const titles = ref([
+	{ id: 1, title: 'СПОРТ', img: new URL('@/assets/rapper.png', import.meta.url).href },
+	{ id: 2, title: 'ТУРИЗМ', img: new URL('@/assets/brige.png', import.meta.url).href },
+	{ id: 3, title: 'ПАРТНЕРЫ', img: new URL('@/assets/islam.png', import.meta.url).href },
+	{ id: 4, title: 'ПРОЕКТЫ', img: new URL('@/assets/september11.png', import.meta.url).href }
+])
 </script>
 
 <template>
@@ -22,66 +17,9 @@ export default {
 			<div class="red-rectangle"></div>
 			<h3>ТЕМЫ</h3>
 			<div class="container">
-				<div class="item item_1">
-					<h2 class="theme__title">СПОРТ</h2>
-					<img src="../../assets/rapper.png" alt="Фотография статьи" />
-					<p class="item_2-subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-				</div>
-				<div class="item item_2">
-					<h2 class="theme__title">ТУРИЗМ</h2>
-					<img src="../../assets/brige.png" alt="Фотография статьи" />
-					<p class="item_2-subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-				</div>
-				<div class="item item_3">
-					<h2 class="theme__title">ПАРТНЕРЫ</h2>
-					<img src="../../assets/islam.png" alt="Фотография статьи" />
-					<p class="item_2-subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-					<p class="item_2-list">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-					</p>
-				</div>
-				<div class="item item_4">
-					<h2 class="theme__title">ПРОЕКТЫ</h2>
-					<img src="../../assets/september11.png" alt="Фотография статьи" />
+				<div v-for="item in titles" :key="item.id" class="item">
+					<h2 class="theme__title">{{ item.title }}</h2>
+					<img :src="item.img" alt="Фотография статьи" />
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
@@ -145,17 +83,12 @@ h3 {
 }
 
 .red-rectangle {
-	width: 88px; /* ширина прямоугольника */
-	height: 8px; /* высота прямоугольника */
-	background-color: #aa0000; /* цвет фона прямоугольника */
+	width: 88px;
+	height: 8px;
+	background-color: #aa0000;
 	margin-bottom: 10px;
 }
-.diviver {
-	height: 1px;
-	width: 90%;
-	margin-left: 5px;
-	background-color: black;
-}
+
 .item_2-subtitle {
 	font-family: 'Roboto Condensed';
 	margin: 16px 0;
@@ -163,6 +96,7 @@ h3 {
 	font-weight: bold;
 	width: 345px;
 }
+
 .item_2-list {
 	width: 345px;
 }
@@ -172,21 +106,24 @@ h3 {
 		margin-bottom: 20px;
 		padding: 10px;
 	}
+
 	.theme__title {
 		font-size: 20px;
 	}
+
 	img {
 		width: 300px;
 		height: 200px;
 	}
+
 	h3 {
 		font-size: 20px;
 	}
-	.item_1,
-	.item_2,
-	.item_3 {
+
+	.item:nth-child(n + 2) {
 		display: none;
 	}
+
 	p {
 		font-size: 16px;
 	}

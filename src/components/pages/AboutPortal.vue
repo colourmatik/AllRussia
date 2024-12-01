@@ -93,8 +93,8 @@
 </template>
 
 <script>
-import NavigateBar from '@/components/layouts/NavigateBar.vue';
-import mainSection from '../Main/mainSection.vue';
+import NavigateBar from '@/components/layouts/NavigateBar.vue'
+import mainSection from '../Main/mainSection.vue'
 export default {
 	name: 'AboutPortal',
 	components: { mainSection, NavigateBar }

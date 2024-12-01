@@ -277,23 +277,4 @@ const handleLanguageChange = () => {
 		}
 	}
 }
-
-/* Адаптация под планшеты */
-@media (min-width: 769px) and (max-width: 1024px) {
-	.header {
-		.menu__container {
-			width: 100%;
-			justify-content: space-between;
-			padding: 0 20px;
-		}
-
-		.header__logo {
-			font-size: 20px;
-		}
-
-		.header__items {
-			font-size: 16px;
-		}
-	}
-}
 </style>

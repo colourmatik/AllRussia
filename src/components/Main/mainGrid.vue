@@ -94,115 +94,142 @@ export default {
 	</div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/styles/main.scss'; // Импортируем глобальные переменные и миксины
+
 .container {
 	margin: 0 auto;
 	margin-top: 80px;
-	width: 1440px;
+	width: 100%; // Изменяем ширину для адаптивности
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 400px);
-	grid-row-gap: 32px;
-	grid-column-gap: 20px;
+	gap: 32px 20px;
+
+	// Адаптация под средние экраны
+	@include media-max($screen-md) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		gap: 20px;
+	}
+
+	// Адаптация под маленькие экраны
+	@include media-max($screen-sm) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 15px;
+	}
 }
+
 .item_1 {
 	display: flex;
 	justify-content: space-between;
 	grid-column: 1/4;
+
+	@include media-max($screen-md) {
+		grid-column: 1/3;
+	}
+
+	@include media-max($screen-sm) {
+		flex-direction: column;
+		align-items: center;
+		grid-column: 1;
+	}
 }
+
 .item_2 {
 	max-width: 300px;
 	grid-column: 4/4;
 	grid-row: 1/3;
+
+	@include media-max($screen-md) {
+		grid-column: 2/2;
+		grid-row: auto;
+	}
+
+	@include media-max($screen-sm) {
+		grid-column: 1;
+		max-width: 100%;
+	}
 }
 
-.horizontal-line {
-	height: 1px;
-	width: 100%;
-	background-color: #000;
-	margin: 0 auto;
+.item_3,
+.item_4,
+.item_5 {
+	@include media-max($screen-sm) {
+		display: none;
+	}
 }
 
+.horizontal-line,
 .vertical-line {
-	height: 1px; /* Высота линии */
-	width: 140px; /* Ширина линии */
-	background-color: black; /* Цвет линии */
+	background-color: $black;
 	opacity: 0.4;
 }
-.diviver {
-	height: 1px;
-	width: 100%;
-	background-color: black;
-}
+
 .item_2-title {
 	margin: 8px 0;
 	font-weight: normal;
+
+	@include media-max($screen-sm) {
+		font-size: 16px;
+	}
 }
+
 .item_2-subtitle {
 	font-family: 'Roboto Condensed';
 	margin: 8px 0;
 	font-size: 20px;
 	font-weight: bold;
+
+	@include media-max($screen-sm) {
+		font-size: 16px;
+	}
 }
+
 .item_2-list {
 	font-family: 'Roboto';
 	font-size: 16px;
-	font-weight: normal;
+
+	@include media-max($screen-sm) {
+		font-size: 14px;
+	}
 }
 
 .asd {
 	margin-top: 0;
 	margin-bottom: 12px;
-	color: #aa0000;
+	color: $red;
 	font-size: 12px;
+
+	@include media-max($screen-sm) {
+		font-size: 10px;
+	}
 }
+
 .dsa {
 	font-weight: 600;
 	font-size: 18px;
+
+	@include media-max($screen-sm) {
+		font-size: 14px;
+	}
 }
+
 .red-rectangle {
 	width: 88px;
 	height: 8px;
-	background-color: #aa0000;
+	background-color: $red;
 }
 
-.item_1-title {
-	margin: 0;
-	width: 300px;
-	font-size: 20px;
-	padding: 0 10px 10px 10px;
-}
-.item_1-subtitle {
-	padding: 0 10px 10px 10px;
-	font-size: 16px;
-}
-
-.item_1-text {
-	padding: 10px 10px 10px 10px;
-	font-size: 20px;
-	font-weight: 600;
-}
-
+.item_1-title,
+.item_1-subtitle,
+.item_1-text,
 .item_1-list {
-	padding: 0 30px 30px 40px;
-}
-@media screen and (width < 769px) {
-	.container {
-		padding: 10px;
-		display: flex;
-		flex-direction: column;
-	}
-	.item_1-one {
-		display: none;
-	}
-	.item_1-img {
-		width: 300px;
-		height: 200px;
-	}
-	.item_3,
-	.item_4,
-	.item_5 {
-		display: none;
+	padding: 10px;
+
+	@include media-max($screen-sm) {
+		font-size: 14px;
 	}
 }
 </style>

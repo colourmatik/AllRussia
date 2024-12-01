@@ -6,13 +6,27 @@ import { onMounted, ref } from 'vue'
 const mainArticle = ref([])
 const sameAsArticle = ref([])
 
+const placeholderImg = 'https://via.placeholder.com/300x200?text=No+Image'
+
 const fetchMainTeach = async () => {
 	try {
 		const response = await axios.get(`${BASE_URL}/data_main_page`)
-		mainArticle.value = response.data.main_article
-		sameAsArticle.value = response.data.same_as_article
+		mainArticle.value = response.data.main_article || []
+		sameAsArticle.value = response.data.same_as_article || []
 	} catch (error) {
 		console.error('Ошибка при получении данных:', error)
+
+		mainArticle.value = [
+			{
+				img: placeholderImg,
+				title: 'Заголовок отсутствует',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+			}
+		]
+		sameAsArticle.value = Array(4).fill({
+			img: placeholderImg,
+			title: 'Заголовок отсутствует'
+		})
 	}
 }
 
@@ -26,13 +40,19 @@ onMounted(fetchMainTeach)
 		<h3>НАУКА И ОБРАЗОВАНИЕ</h3>
 		<div class="container">
 			<div v-if="mainArticle.length" class="item item_1">
-				<img class="item_1-img" :src="mainArticle[0]?.img" alt="" />
-				<h3 class="title">{{ mainArticle[0]?.title }}</h3>
-				<p>{{ mainArticle[0]?.description }}</p>
+				<img class="item_1-img" :src="mainArticle[0]?.img || placeholderImg" alt="Main Article" />
+				<h3 class="title">{{ mainArticle[0]?.title || 'Заголовок отсутствует' }}</h3>
+				<p>
+					{{
+						mainArticle[0]?.description ||
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+					}}
+				</p>
 			</div>
+
 			<div v-for="(item, index) in sameAsArticle" :key="index" :class="`item item_${index + 2}`">
-				<img :src="item.img" alt="" />
-				<p class="title">{{ item.title }}</p>
+				<img :src="item.img || placeholderImg" alt="Same Article" />
+				<p class="title">{{ item.title || 'Заголовок отсутствует' }}</p>
 			</div>
 		</div>
 	</div>
@@ -53,8 +73,8 @@ onMounted(fetchMainTeach)
 }
 
 .item_1 {
-	grid-column: 1/3;
-	grid-row: 1/3;
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
 }
 
 .item_1-img {

@@ -1,5 +1,5 @@
 <script>
-import NavigateBar from '@/components/layouts/NavigateBar.vue';
+import NavigateBar from '@/components/layouts/NavigateBar.vue'
 export default {
 	name: 'ProjectPage',
 	components: {
